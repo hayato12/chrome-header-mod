@@ -1,0 +1,9 @@
+{
+  "urls": ["https://google.com", "https://another-example.com"],
+  "headers": [
+    {
+      "name": "X-Custom-Header",
+      "value": "MyValue123"
+    }
+  ]
+}
