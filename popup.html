@@ -5,15 +5,75 @@
       body {
         font-family: sans-serif;
         padding: 10px;
-        width: 150px;
+        width: 350px;
+      }
+      .section {
+        margin-bottom: 15px;
+      }
+      .header-item,
+      .url-item {
+        margin-bottom: 5px;
+        display: flex;
+      }
+      input {
+        margin-right: 5px;
+      }
+      button {
+        margin-top: 5px;
+        cursor: pointer;
+      }
+      .delete-btn {
+        margin-left: 5px;
+        cursor: pointer;
+        color: red;
+      }
+      h3 {
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <label>
-      <input type="checkbox" id="toggleHeader" />
-      <span>Enable Header</span>
-    </label>
+    <div class="section">
+      <label>
+        <input type="checkbox" id="toggleHeader" />
+        <span>Enable Header</span>
+      </label>
+    </div>
+
+    <div class="section">
+      <h3>対象URL</h3>
+      <div id="url-list"></div>
+      <div>
+        <input
+          type="text"
+          id="new-url"
+          placeholder="https://example.com"
+          style="width: 250px"
+        />
+        <button id="add-url">追加</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>ヘッダー設定</h3>
+      <div id="header-list"></div>
+      <div>
+        <input
+          type="text"
+          id="new-header-name"
+          placeholder="ヘッダー名"
+          style="width: 120px"
+        />
+        <input
+          type="text"
+          id="new-header-value"
+          placeholder="値"
+          style="width: 120px"
+        />
+        <button id="add-header">追加</button>
+      </div>
+    </div>
+
     <script src="popup.js"></script>
   </body>
 </html>
