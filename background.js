@@ -45,7 +45,7 @@ function updateRules() {
           },
           condition: {
             urlFilter: config.urls.join("|"),
-            resourceTypes: ["main_frame"],
+            resourceTypes: ["main_frame","sub_frame","script","stylesheet","image","object","xmlhttprequest"], 
           },
         },
       ]
